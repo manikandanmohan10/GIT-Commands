@@ -11,3 +11,16 @@ git revert {commitID}
 ```
 This will revert the commit and goes to the previous commit state.
 **Note:** It'll create one more commit like "Revert commit {ID}"
+
+## GIT Cherry Pick
+We use cherry pick to get the changes from particular commit
+### For instance,
+If I added hello world on the first commit, I can able to get those particular change which i did in that commit
+1. For that, Same first we need to list the logs
+```
+git log
+```
+2. Then copy the respective commitID the one which you want to get the changes
+```
+git cherry-pick {commitID}
+``` 
