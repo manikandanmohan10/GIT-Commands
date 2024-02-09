@@ -1,5 +1,5 @@
 # GIT-Commands
-## GIT Revert
+## ---> GIT Revert
 1.First we have to see the logs in order to get the commit ID which we want to revert
 ```
 git log
@@ -12,7 +12,7 @@ git revert {commitID}
 This will revert the commit and goes to the previous commit state.
 **Note:** It'll create one more commit like "Revert commit {ID}"
 
-## GIT Cherry Pick
+## ---> GIT Cherry Pick
 We use cherry pick to get the changes from particular commit
 ### For instance,
 If I added hello world on the first commit, I can able to get those particular change which i did in that commit
