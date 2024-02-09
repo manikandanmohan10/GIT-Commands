@@ -24,3 +24,31 @@ git log
 ```
 git cherry-pick {commitID}
 ``` 
+## ---> GIT reset
+
+The git reset command in Git is used to reset the current branch to a specific state. It is a powerful command that can be used to undo changes in various ways. There are three primary modes of git reset: soft, mixed (default), and hard.
+1. **Soft Reset** (--soft):
+  This mode resets the branch pointer to a specific commit, but it keeps your changes in the staging area.
+```
+git reset --soft <commit>
+```
+2. **Mixed Reset**(Default)
+   This mode resets the branch pointer and the staging area to a specific commit, but it leaves your changes in the working directory as uncommitted changes.
+```
+git reset <commit>
+```
+3. **Hard Reset**(--hard):
+   This mode resets the branch pointer, the staging area, and the working directory to a specific commit. It discards all changes.
+```
+git reset --hard <commit>
+```
+4. **Reset to HEAD**:
+   If you want to reset to latest commit (HEAD), you can use `HEAD` as a reference
+```
+git reset --hard HEAD
+```
+5. **Reset to a Single FIle**:
+   You can also reset a specific file to the state of a particular commit.
+```
+git checkout <commit> -- <file>
+```
